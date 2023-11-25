@@ -1,0 +1,51 @@
+{% extends 'notes/index.html' %}
+
+{% block content %}
+  <!-- component -->
+  <div class="bg-gray-200 font-sans h-screen w-full flex flex-row justify-center items-center">
+    <div class="card w-96 mx-auto bg-white shadow-xl hover:shadow">
+      <img class="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="https://img.icons8.com/?size=100&id=23265&format=png" alt="" />
+
+      <div class="text-center mt-2 text-3xl font-medium">{{ eleve.nom }} {{ eleve.prenom }}</div>
+      <div class="text-center mt-2 font-light text-sm">{{ eleve.niveau.nom }}</div>
+      <div class="text-center font-normal text-lg">{{ eleve.date_naissance }}</div>
+      <div class="px-6 text-center mt-2 font-light text-sm">
+        <p>
+          
+          {% for matiere in eleve.niveau.matiere_set.all %}
+            <a  class="btn btn-primary"   data-toggle="modal" data-target="#exampleModal{{ matiere.nom.split.0}}" href='#' >{{ matiere }}</a>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal{{ matiere.nom.split.0}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{matiere}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    {% for note in matiere.note_set.all %}
+                    <p>{{note}}</p>                    
+                    {% endfor %}
+                    <a  class="btn btn-primary"    href="{% url 'notes:add-note' eleve.id matiere.id %}" >Ajouter une note</a>
+                  </div>
+       
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </p>
+      </div>
+      <hr class="mt-8" />
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}
+
+           {% comment %} <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> {% endcomment %}

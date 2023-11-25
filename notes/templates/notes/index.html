@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Django notes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <header class="bs4header bg-secondary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"><b><i>Notes App</i></b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="bs4navbar">
+                    <ul class="navbar-nav ml-auto">
+                        {% comment %} <li class="nav-item active">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li> {% endcomment %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'notes:matieres' %}">Matières</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'notes:eleves' %}">eleves</a>
+                        </li>
+                  
+                        {% comment %} <li class="dropdown">
+                            <button class="btn btn-warning dropdown-toggle ml-lg-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">User Name</a>
+                                <a class="dropdown-item" href="#">Setting</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </li> {% endcomment %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Body Content Here -->
+    <div class="container">
+      {% block content %}
+    
+      {% endblock content %}
+    </div>
+</body>
+</html>
+

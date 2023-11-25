@@ -1,0 +1,639 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "Eleve",
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "isExtraImport": true,
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Enseignant",
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "isExtraImport": true,
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Matiere",
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "isExtraImport": true,
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Niveau",
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "isExtraImport": true,
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Note",
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "isExtraImport": true,
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "locale",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "locale",
+        "description": "locale",
+        "detail": "locale",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "ifnti_l3.asgi",
+        "description": "ifnti_l3.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "ifnti_l3.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-uw6c6z*$^+jxj0sv#%)l$w(mndkq&v0k26^%b-j*dnwt*p3e-0'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-uw6c6z*$^+jxj0sv#%)l$w(mndkq&v0k26^%b-j*dnwt*p3e-0'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n     #Ajout de l'application notes",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n     #Ajout de l'application notes\n    'notes.apps.NotesConfig',\n]",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'ifnti_l3.urls'",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "ROOT_URLCONF = 'ifnti_l3.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'ifnti_l3.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "ifnti_l3.settings",
+        "description": "ifnti_l3.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ifnti_l3.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "ifnti_l3.urls",
+        "description": "ifnti_l3.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"notes.urls\")),\n]",
+        "detail": "ifnti_l3.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "ifnti_l3.wsgi",
+        "description": "ifnti_l3.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "ifnti_l3.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notes.migrations.0001_initial",
+        "description": "notes.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Eleve',\n            fields=[\n                ('nom', models.CharField(max_length=50)),\n                ('prenom', models.CharField(max_length=50)),",
+        "detail": "notes.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notes.migrations.0002_alter_eleve_id",
+        "description": "notes.migrations.0002_alter_eleve_id",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='eleve',\n            name='id',\n            field=models.BigIntegerField(primary_key=True, serialize=False),\n        ),",
+        "detail": "notes.migrations.0002_alter_eleve_id",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notes.migrations.0003_remove_eleve_matieres",
+        "description": "notes.migrations.0003_remove_eleve_matieres",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0002_alter_eleve_id'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='eleve',\n            name='matieres',\n        ),\n    ]",
+        "detail": "notes.migrations.0003_remove_eleve_matieres",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notes.migrations.0004_alter_note_valeur",
+        "description": "notes.migrations.0004_alter_note_valeur",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0003_remove_eleve_matieres'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='note',\n            name='valeur',\n            field=models.IntegerField(null=True),\n        ),",
+        "detail": "notes.migrations.0004_alter_note_valeur",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "notes.migrations.0005_alter_note_valeur",
+        "description": "notes.migrations.0005_alter_note_valeur",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0004_alter_note_valeur'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='note',\n            name='valeur',\n            field=models.FloatField(null=True),\n        ),",
+        "detail": "notes.migrations.0005_alter_note_valeur",
+        "documentation": {}
+    },
+    {
+        "label": "NotesConfig",
+        "kind": 6,
+        "importPath": "notes.apps",
+        "description": "notes.apps",
+        "peekOfCode": "class NotesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'notes'",
+        "detail": "notes.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Niveau",
+        "kind": 6,
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "peekOfCode": "class Niveau(models.Model):\n    nom = models.CharField(max_length=2,unique=True)\n    def __str__(self) -> str:\n        return self.nom\nclass Personne(models.Model):\n    nom = models.CharField(max_length=50)\n    prenom = models.CharField(max_length=50)\n    sexe = models.CharField(choices=((\"M\", \"Masculin\"), (\"F\",\"Feminin\")),max_length=20)\n    date_naissance = models.DateField()\n    class Meta:",
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Personne",
+        "kind": 6,
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "peekOfCode": "class Personne(models.Model):\n    nom = models.CharField(max_length=50)\n    prenom = models.CharField(max_length=50)\n    sexe = models.CharField(choices=((\"M\", \"Masculin\"), (\"F\",\"Feminin\")),max_length=20)\n    date_naissance = models.DateField()\n    class Meta:\n        abstract = True\nclass Enseignant(Personne):\n    pass\n    def __str__(self) -> str:",
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Enseignant",
+        "kind": 6,
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "peekOfCode": "class Enseignant(Personne):\n    pass\n    def __str__(self) -> str:\n        return self.nom\n    class Meta:\n        verbose_name = \"Enseignant\"\n        verbose_name_plural = \"Enseignants\"\nclass Matiere(models.Model):\n    nom = models.CharField(max_length=50, unique=True)\n    enseignant = models.ForeignKey(Enseignant, on_delete=models.CASCADE)",
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Matiere",
+        "kind": 6,
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "peekOfCode": "class Matiere(models.Model):\n    nom = models.CharField(max_length=50, unique=True)\n    enseignant = models.ForeignKey(Enseignant, on_delete=models.CASCADE)\n    niveaus = models.ManyToManyField(Niveau)\n    def __str__(self) -> str:\n        return self.nom\n    class Meta:\n        verbose_name = \"Matiere\"\n        verbose_name_plural = \"Matieres\"\nclass Eleve(Personne):",
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Eleve",
+        "kind": 6,
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "peekOfCode": "class Eleve(Personne):\n    id = models.BigIntegerField(primary_key=True)\n    niveau = models.ForeignKey(Niveau, on_delete=models.CASCADE)\n   # matieres = models.ManyToManyField(Matiere)\n    def __str__(self) -> str:\n        return self.nom + '\\n'\n    class Meta:\n        verbose_name = \"Eleve\"\n        verbose_name_plural = \"Eleves\"\nclass Note(models.Model):",
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Note",
+        "kind": 6,
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "peekOfCode": "class Note(models.Model):\n    valeur = models.FloatField(null=True)\n    eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)\n    matiere = models.ForeignKey(Matiere, on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return str(self.valeur)\n    class Meta:\n        verbose_name = \"Note\"\n        verbose_name_plural = \"Notes\"",
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "notes.urls",
+        "description": "notes.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"eleves/\", views.eleves, name=\"eleves\"),\n    path(\"eleve/<int:eleve_id>/\", views.eleve, name=\"eleve\"),\n    path(\"matieres/\", views.matieres, name=\"matieres\"),\n    path(\"matiere/<int:matiere_id>/\", views.matiere, name=\"matiere\"),\n    path(\"niveau/<int:niveau_id>/\", views.niveau, name=\"niveau\"),\n    path(\"add_note/<int:eleve_id>/<int:matiere_id>/\", views.add_note, name=\"add-note\"),\n]",
+        "detail": "notes.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def index(request):\n    return render(request, \"notes/index.html\")\ndef eleves(request):\n    eleves = Eleve.objects.all()\n    return render(request, \"eleves/index.html\", {\"eleves\": eleves})\ndef matieres(request):\n    matieres = Matiere.objects.all()\n    return render(request, \"matieres/index.html\", {\"matieres\": matieres})\ndef eleve(request, eleve_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "eleves",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def eleves(request):\n    eleves = Eleve.objects.all()\n    return render(request, \"eleves/index.html\", {\"eleves\": eleves})\ndef matieres(request):\n    matieres = Matiere.objects.all()\n    return render(request, \"matieres/index.html\", {\"matieres\": matieres})\ndef eleve(request, eleve_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    print(matieres)\n    return render(request, \"eleves/show.html\", locals())",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "matieres",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def matieres(request):\n    matieres = Matiere.objects.all()\n    return render(request, \"matieres/index.html\", {\"matieres\": matieres})\ndef eleve(request, eleve_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    print(matieres)\n    return render(request, \"eleves/show.html\", locals())\ndef matiere(request, matiere_id):\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    return render(request, \"matieres/show.html\", locals())",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "eleve",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def eleve(request, eleve_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    print(matieres)\n    return render(request, \"eleves/show.html\", locals())\ndef matiere(request, matiere_id):\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    return render(request, \"matieres/show.html\", locals())\ndef niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "matiere",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def matiere(request, matiere_id):\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    return render(request, \"matieres/show.html\", locals())\ndef niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    try:\n        eleve = Eleve.objects.get( pk=eleve_id)\n        matiere = Matiere.objects.get( pk=matiere_id)",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "niveau",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    try:\n        eleve = Eleve.objects.get( pk=eleve_id)\n        matiere = Matiere.objects.get( pk=matiere_id)\n    except ( Matiere.DoesNotExist) as e1:\n        error_message = \"Une erreur est survenue: La matière spécifiée n'existe pas.\"\n        return HttpResponse(error_message)",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_note",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def add_note(request, eleve_id, matiere_id):\n    try:\n        eleve = Eleve.objects.get( pk=eleve_id)\n        matiere = Matiere.objects.get( pk=matiere_id)\n    except ( Matiere.DoesNotExist) as e1:\n        error_message = \"Une erreur est survenue: La matière spécifiée n'existe pas.\"\n        return HttpResponse(error_message)\n    except (Eleve.DoesNotExist) as e2:\n        error_message = \"Une erreur est survenue: L'élève spécifié n'existe pas.\"\n        return HttpResponse(error_message)",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ifnti_l3.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
