@@ -1,7 +1,9 @@
 import datetime
+from enum import unique
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
+from django.contrib.auth.models import User
 # Create your models here.
 class Niveau(models.Model):
     nom = models.CharField(max_length=2,unique=True)
@@ -14,6 +16,7 @@ class Personne(models.Model):
     prenom = models.CharField(max_length=50)
     sexe = models.CharField(choices=(("M", "Masculin"), ("F","Feminin")),max_length=20)
     date_naissance = models.DateField()
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     class Meta:
         abstract = True

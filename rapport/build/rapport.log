@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.23)  21 NOV 2023 09:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.23)  27 NOV 2023 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -771,98 +771,73 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 19.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 19.
- (build/rapport.toc
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-)
+ (build/rapport.toc)
 \tf@toc=\write4
 \openout4 = `rapport.toc'.
 
 <images/cas.png, id=4, 894.34125pt x 663.47874pt>
 File: images/cas.png Graphic file (type png)
 <use images/cas.png>
-Package pdftex.def Info: images/cas.png  used on input line 37.
-(pdftex.def)             Requested size: 268.30444pt x 199.04515pt.
+Package pdftex.def Info: images/cas.png  used on input line 30.
+(pdftex.def)             Requested size: 357.73016pt x 265.3868pt.
+<images/1.png, id=6, 1321.93875pt x 752.8125pt>
+File: images/1.png Graphic file (type png)
+<use images/1.png>
+Package pdftex.def Info: images/1.png  used on input line 37.
+(pdftex.def)             Requested size: 396.58469pt x 225.84549pt.
+<images/2.png, id=7, 1321.93875pt x 752.8125pt>
+File: images/2.png Graphic file (type png)
+<use images/2.png>
+Package pdftex.def Info: images/2.png  used on input line 38.
+(pdftex.def)             Requested size: 396.58469pt x 225.84549pt.
+<images/3.png, id=8, 1377.145pt x 767.86874pt>
+File: images/3.png Graphic file (type png)
+<use images/3.png>
+Package pdftex.def Info: images/3.png  used on input line 39.
+(pdftex.def)             Requested size: 413.14668pt x 230.3624pt.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/cas.png>]
-<images/vue_note.png, id=14, 1336.995pt x 483.8075pt>
-File: images/vue_note.png Graphic file (type png)
-<use images/vue_note.png>
-Package pdftex.def Info: images/vue_note.png  used on input line 48.
-(pdftex.def)             Requested size: 401.1016pt x 145.14337pt.
-<images/url_note.png, id=15, 1804.7425pt x 369.38pt>
-File: images/url_note.png Graphic file (type png)
-<use images/url_note.png>
-Package pdftex.def Info: images/url_note.png  used on input line 52.
-(pdftex.def)             Requested size: 270.69969pt x 55.4046pt.
-<images/test_note.png, id=16, 1927.2pt x 97.36375pt>
-File: images/test_note.png Graphic file (type png)
-<use images/test_note.png>
-Package pdftex.def Info: images/test_note.png  used on input line 55.
-(pdftex.def)             Requested size: 385.43318pt x 19.4724pt.
-<images/temp_note.png, id=17, 2461.195pt x 1094.0875pt>
-File: images/temp_note.png Graphic file (type png)
-<use images/temp_note.png>
-Package pdftex.def Info: images/temp_note.png  used on input line 59.
-(pdftex.def)             Requested size: 442.99599pt x 196.92725pt.
-<images/detEl.png, id=18, 2858.68pt x 2047.65pt>
-File: images/detEl.png Graphic file (type png)
-<use images/detEl.png>
-Package pdftex.def Info: images/detEl.png  used on input line 63.
-(pdftex.def)             Requested size: 400.21248pt x 286.66905pt.
-
-[2 <./images/vue_note.png> <./images/url_note.png> <./images/test_note.png> <./
-images/temp_note.png>]
-<images/contVueNote.png, id=26, 2615.7725pt x 1132.23pt>
-File: images/contVueNote.png Graphic file (type png)
-<use images/contVueNote.png>
-Package pdftex.def Info: images/contVueNote.png  used on input line 67.
-(pdftex.def)             Requested size: 470.81874pt x 203.7926pt.
-
-Overfull \hbox (19.67087pt too wide) in paragraph at lines 67--68
- [] 
- []
-
-<images/tempNote.png, id=27, 2461.195pt x 1094.0875pt>
-File: images/tempNote.png Graphic file (type png)
-<use images/tempNote.png>
-Package pdftex.def Info: images/tempNote.png  used on input line 71.
-(pdftex.def)             Requested size: 442.99599pt x 196.92725pt.
-[3 <./images/detEl.png> <./images/contVueNote.png>]
-<images/test.png, id=33, 796.9775pt x 329.23pt>
-File: images/test.png Graphic file (type png)
-<use images/test.png>
-Package pdftex.def Info: images/test.png  used on input line 75.
-(pdftex.def)             Requested size: 143.44975pt x 59.25883pt.
- [4 <./images/tempNote.png> <./images/test.png>] (build/rapport.aux) ) 
+[2 <./images/1.png> <./images/2.png> <./images/3.png>]
+<images/error.png, id=23, 1229.59375pt x 507.8975pt>
+File: images/error.png Graphic file (type png)
+<use images/error.png>
+Package pdftex.def Info: images/error.png  used on input line 49.
+(pdftex.def)             Requested size: 368.88097pt x 152.37042pt.
+<images/per.png, id=24, 1804.7425pt x 636.3775pt>
+File: images/per.png Graphic file (type png)
+<use images/per.png>
+Package pdftex.def Info: images/per.png  used on input line 53.
+(pdftex.def)             Requested size: 360.94211pt x 127.27324pt.
+<images/users.png, id=25, 953.5625pt x 818.05624pt>
+File: images/users.png Graphic file (type png)
+<use images/users.png>
+Package pdftex.def Info: images/users.png  used on input line 58.
+(pdftex.def)             Requested size: 286.07095pt x 245.41876pt.
+<images/erro.png, id=26, 1201.48875pt x 264.99pt>
+File: images/erro.png Graphic file (type png)
+<use images/erro.png>
+Package pdftex.def Info: images/erro.png  used on input line 62.
+(pdftex.def)             Requested size: 360.44942pt x 79.4976pt.
+ [3 <./images/error.png> <./images/per.png> <./images/users.png>] [4 <./images/
+erro.png>]
+(build/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 15609 strings out of 478287
- 301119 string characters out of 5849288
- 583384 words of memory out of 5000000
- 33520 multiletter control sequences out of 15000+600000
- 539337 words of font info for 95 fonts, out of 8000000 for 9000
+ 15582 strings out of 478287
+ 300406 string characters out of 5849288
+ 582402 words of memory out of 5000000
+ 33492 multiletter control sequences out of 15000+600000
+ 525361 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,6n,89p,420b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/sha
-re/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dis
-t/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/adobe/utopia/putr8a.pfb>
-Output written on build/rapport.pdf (4 pages, 1145380 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
+Output written on build/rapport.pdf (4 pages, 656240 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

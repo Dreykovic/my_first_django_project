@@ -14,65 +14,52 @@
 \usepackage{fourier}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{AMONA Birewa Audrey}
-\title{ Tp 05 Les formulaires }
+\title{ Tp 06 Sécurité et site administration }
 \begin{document}
 \maketitle
 \tableofcontents
-\section{Mise en route}
-Les formulaires sont les parties les plus importantes, donc dangereuses, de tout site web. C’est depuis là que
-l’utilisateur peut modifier la base de données au travers de la méthode POST de HTTP. Nous allons créer des
-formulaires pour les modèles de notre application dont nous ne nous sommes pas occupés jusqu’à présent.
-\subsection{Compréhension}
+\begin{abstract}
+Ce TP contient 3 parties indépendantes. D’abord nous nous pencherons sur l’authentification. En-
+suite nous explorerons les problèmes de sécurité : CSRF, HTTPS, clé de chiffrement et détournement
+de clic. Enfin nous verrons comment customiser le site d’administration.
+\end{abstract}
+\section{Authentification}
 \begin{enumerate}
-\item Pour éviter tout problème avec la base de données, nous allons gérer les éléments des pages de notre site pour éviter q'un utilisateur qui n'a pas un droit effectue une action.
-\item Pour notre site de \textbf{notes} on peut dégager les utilisateurs suivants:
+\item Dans le Tp précédent, nous avions spécifié les différentes fonctionnalités en fonction des utilisateurs du système:
+\begin{center}
+\includegraphics[scale=0.4]{images/cas.png}
+\end{center}
+Il étais convenu que seul les enseignant, les surveillants ou encore le directeur peuvent avoir accès au formulaire d'ajout de note.
+\item Dans le site administration, nous remarquons qu'il y'a deux modèles de plus \textbf{ Users} et \textbf{Groups}, que nous n'avons pas ajouté nous même. Le modèle \textbf{Users} possède les attributs suivant: username, lastname, firstname, email adress, staff, status. Ilpossède un enregistrement qui a pour username le nom de notre superutilisateur créé.
+
+\item Nous allons créer des groupes avec les différents roles du diagramme de cas d'utilisation précédent.
+\begin{center}
+\includegraphics[scale=0.3]{images/1.png}
+\includegraphics[scale=0.3]{images/2.png}
+\includegraphics[scale=0.3]{images/3.png}
+\end{center}
+\item Django fournit une classe User qui contient l’ensemble des informations nécessaires à l’authentification
+et aux autorisations Nous pouvons étendre ce modèle sans modifier nos modèles utilisateurs par défaut soit:
 	\begin{itemize}
-		\item Enseignant
-		\item Élève
-		\item Surveillant
-		\item Directeur d'étude
+		\item En créant une relation d'héritage entre notre modèle et le modèle par défaut \textbf{Users}
+		\item En créant une relation OneToOne entre notre modèle et le modèle par défaut \textbf{Users}
 	\end{itemize}
-	Le diagramme de cas d'utilisation suivant illustre les accès de chaque utilisateur:
-	\begin{center}
-		\includegraphics[scale=0.3]{images/cas.png}
-	\end{center}
-	Les modèles déja créer n'ont pas besoin de vues de formulaire à cause du site administrateur
-\item Dans les Tp précédents, nous n'avons pas créer de vue pour le modèle \textbf{Note}. Seul les enseignant, les surveillants et le directeur auront accès aux vues de formulaires de ce modèle. Ces vues serviront à afficher les templates de formulaires et à ajouter les notes à des matières pour un étudiant donné.
-\end{enumerate}
-\subsection{Création}
+\item Nous allons procéder à la création OneToOne entre les deux modèles, lorsqu'on lance \textbf{py manage.py makemigrations}, on a l'erreur suivante:
+\begin{center}
+\includegraphics[scale=0.3]{images/error.png}
+\end{center}
+Ensuite on corrige le modèle en rendant l'attribut \textbf{user} nullable:
+\begin{center}
+\includegraphics[scale=0.2]{images/per.png}
+\end{center}
+\item Nous allons maintenant créer une instance de \textbf{User} pour chaque personne que nous avions créé:
 
-\begin{enumerate}
-
-\item Dans le fichier \textbf{views.py}, nous allons créer une vue pour le modèle \textbf{Note} nommée \textbf{add\_note}. Cette vues aura trois entrées: le request, l'id de l'eleve, et l'id d'une matière qu'il suit.
-     \begin{center}
-          \includegraphics[scale=0.3]{images/vue\_note.png}
-      \end{center}
-\item Nous allons ajouter cette vue dans \textbf{urls.py} Et tester l'affichage. Dans la liste \textbf{urlpatterns}:
-     \begin{center}
-          \includegraphics[scale=0.15]{images/url\_note.png}
-      \end{center}
-      \begin{center}
-          \includegraphics[scale=0.2]{images/test\_note.png}
-      \end{center}
-\item Nous allons créer le template \textbf{add\_note.html} dans le répertoire \textbf{notes/templates/notes}.
-      \begin{center}
-          \includegraphics[scale=0.18]{images/temp\_note.png}
-      \end{center}
-\item NOus allons maintenant ajouter des lien dans le fichier de details élève pour accéder au template précedemment créé.
-      \begin{center}
-          \includegraphics[scale=0.14]{images/detEl.png}
-      \end{center}
-\item Nous allons maintenant rectifier la vue de note pour qu'elle puisse avoir un comportement logique.
-      \begin{center}
-          \includegraphics[scale=0.18]{images/contVueNote.png}
-      \end{center}
-      Voici le contenu du template associé:
-      \begin{center}
-          \includegraphics[scale=0.18]{images/tempNote.png}
-      \end{center}
- \item Voici le resultat dans le site administration d'une note créer:
-       \begin{center}
-          \includegraphics[scale=0.18]{images/test.png}
-      \end{center}
+\begin{center}
+	\includegraphics[scale=0.3]{images/users.png}
+\end{center}
+\item Nous allons maintenant enlever la propriété nullable sur l'attribut précédemment ajouter. Losqu'on essaie de relancer les migration, on a le message suivant au terminal:
+\begin{center}
+\includegraphics[scale=0.3]{images/error.png}
+\end{center}
 \end{enumerate}
 \end{document}
