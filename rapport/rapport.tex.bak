@@ -1,0 +1,78 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+
+\usepackage{tcolorbox}
+
+\usepackage{lmodern}
+\usepackage{fourier}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{AMONA Birewa Audrey}
+\title{ Tp 05 Les formulaires }
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Mise en route}
+Les formulaires sont les parties les plus importantes, donc dangereuses, de tout site web. C’est depuis là que
+l’utilisateur peut modifier la base de données au travers de la méthode POST de HTTP. Nous allons créer des
+formulaires pour les modèles de notre application dont nous ne nous sommes pas occupés jusqu’à présent.
+\subsection{Compréhension}
+\begin{enumerate}
+\item Pour éviter tout problème avec la base de données, nous allons gérer les éléments des pages de notre site pour éviter q'un utilisateur qui n'a pas un droit effectue une action.
+\item Pour notre site de \textbf{notes} on peut dégager les utilisateurs suivants:
+	\begin{itemize}
+		\item Enseignant
+		\item Élève
+		\item Surveillant
+		\item Directeur d'étude
+	\end{itemize}
+	Le diagramme de cas d'utilisation suivant illustre les accès de chaque utilisateur:
+	\begin{center}
+		\includegraphics[scale=0.3]{images/cas.png}
+	\end{center}
+	Les modèles déja créer n'ont pas besoin de vues de formulaire à cause du site administrateur
+\item Dans les Tp précédents, nous n'avons pas créer de vue pour le modèle \textbf{Note}. Seul les enseignant, les surveillants et le directeur auront accès aux vues de formulaires de ce modèle. Ces vues serviront à afficher les templates de formulaires et à ajouter les notes à des matières pour un étudiant donné.
+\end{enumerate}
+\subsection{Création}
+
+\begin{enumerate}
+
+\item Dans le fichier \textbf{views.py}, nous allons créer une vue pour le modèle \textbf{Note} nommée \textbf{add\_note}. Cette vues aura trois entrées: le request, l'id de l'eleve, et l'id d'une matière qu'il suit.
+     \begin{center}
+          \includegraphics[scale=0.3]{images/vue\_note.png}
+      \end{center}
+\item Nous allons ajouter cette vue dans \textbf{urls.py} Et tester l'affichage. Dans la liste \textbf{urlpatterns}:
+     \begin{center}
+          \includegraphics[scale=0.15]{images/url\_note.png}
+      \end{center}
+      \begin{center}
+          \includegraphics[scale=0.2]{images/test\_note.png}
+      \end{center}
+\item Nous allons créer le template \textbf{add\_note.html} dans le répertoire \textbf{notes/templates/notes}.
+      \begin{center}
+          \includegraphics[scale=0.18]{images/temp\_note.png}
+      \end{center}
+\item NOus allons maintenant ajouter des lien dans le fichier de details élève pour accéder au template précedemment créé.
+      \begin{center}
+          \includegraphics[scale=0.14]{images/detEl.png}
+      \end{center}
+\item Nous allons maintenant rectifier la vue de note pour qu'elle puisse avoir un comportement logique.
+      \begin{center}
+          \includegraphics[scale=0.18]{images/contVueNote.png}
+      \end{center}
+      Voici le contenu du template associé:
+      \begin{center}
+          \includegraphics[scale=0.18]{images/tempNote.png}
+      \end{center}
+ \item Voici le resultat dans le site administration d'une note créer:
+       \begin{center}
+          \includegraphics[scale=0.18]{images/test.png}
+      \end{center}
+\end{enumerate}
+\end{document}

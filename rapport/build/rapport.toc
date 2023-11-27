@@ -1,0 +1,4 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Mise en route}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Compréhension}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Création}{2}{}%
