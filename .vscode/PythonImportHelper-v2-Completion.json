@@ -162,6 +162,14 @@
         "documentation": {}
     },
     {
+        "label": "EleveForm",
+        "importPath": "notes.forms",
+        "description": "notes.forms",
+        "isExtraImport": true,
+        "detail": "notes.forms",
+        "documentation": {}
+    },
+    {
         "label": "Eleve",
         "importPath": "notes.models",
         "description": "notes.models",
@@ -202,6 +210,22 @@
         "documentation": {}
     },
     {
+        "label": "Eleve",
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "isExtraImport": true,
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
+        "label": "Note",
+        "importPath": "notes.models",
+        "description": "notes.models",
+        "isExtraImport": true,
+        "detail": "notes.models",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -210,28 +234,43 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MaxValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "locale",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "locale",
-        "description": "locale",
-        "detail": "locale",
-        "documentation": {}
-    },
-    {
-        "label": "response",
-        "importPath": "urllib",
-        "description": "urllib",
-        "isExtraImport": true,
-        "detail": "urllib",
         "documentation": {}
     },
     {
@@ -493,12 +532,39 @@
         "documentation": {}
     },
     {
+        "label": "EleveAdmin",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class EleveAdmin(admin.ModelAdmin):\n    form = EleveForm\n# Register your models here.\nadmin.site.register(Matiere)\nadmin.site.register(Eleve,EleveAdmin)\nadmin.site.register(Enseignant)\nadmin.site.register(Niveau)\nadmin.site.register(Note)",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
         "label": "NotesConfig",
         "kind": 6,
         "importPath": "notes.apps",
         "description": "notes.apps",
         "peekOfCode": "class NotesConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'notes'",
         "detail": "notes.apps",
+        "documentation": {}
+    },
+    {
+        "label": "NoteForm",
+        "kind": 6,
+        "importPath": "notes.forms",
+        "description": "notes.forms",
+        "peekOfCode": "class NoteForm(forms.ModelForm):\n    class Meta:\n        model = Note\n        fields = (\"valeur\",)\n        labels ={\"valeur\":\"Note sur 20\"}\nclass EleveForm(forms.ModelForm):\n    class Meta:\n        model = Eleve\n        fields = \"__all__\"",
+        "detail": "notes.forms",
+        "documentation": {}
+    },
+    {
+        "label": "EleveForm",
+        "kind": 6,
+        "importPath": "notes.forms",
+        "description": "notes.forms",
+        "peekOfCode": "class EleveForm(forms.ModelForm):\n    class Meta:\n        model = Eleve\n        fields = \"__all__\"",
+        "detail": "notes.forms",
         "documentation": {}
     },
     {
@@ -542,7 +608,7 @@
         "kind": 6,
         "importPath": "notes.models",
         "description": "notes.models",
-        "peekOfCode": "class Eleve(Personne):\n    id = models.BigIntegerField(primary_key=True)\n    niveau = models.ForeignKey(Niveau, on_delete=models.CASCADE)\n   # matieres = models.ManyToManyField(Matiere)\n    def __str__(self) -> str:\n        return self.nom + '\\n'\n    class Meta:\n        verbose_name = \"Eleve\"\n        verbose_name_plural = \"Eleves\"\nclass Note(models.Model):",
+        "peekOfCode": "class Eleve(Personne):\n    id = models.BigIntegerField(primary_key=True)\n    niveau = models.ForeignKey(Niveau, on_delete=models.CASCADE)\n   # matieres = models.ManyToManyField(Matiere)\n    def __str__(self) -> str:\n        return self.nom + '\\n'\n    def clean(self) -> None:\n    nom_contient_entier = any(caractere.isdigit() for caractere in self.nom)\n    prenom_contient_entier = any(caractere.isdigit() for caractere in self.prenom)\n    if(nom_contient_entier or prenom_contient_entier):",
         "detail": "notes.models",
         "documentation": {}
     },
@@ -551,7 +617,7 @@
         "kind": 6,
         "importPath": "notes.models",
         "description": "notes.models",
-        "peekOfCode": "class Note(models.Model):\n    valeur = models.FloatField(null=True)\n    eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)\n    matiere = models.ForeignKey(Matiere, on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return str(self.valeur)\n    class Meta:\n        verbose_name = \"Note\"\n        verbose_name_plural = \"Notes\"",
+        "peekOfCode": "class Note(models.Model):\n    valeur = models.FloatField(null=True, validators=[MinValueValidator(0),MaxValueValidator(20)])\n    eleve = models.ForeignKey(Eleve, on_delete=models.CASCADE)\n    matiere = models.ForeignKey(Matiere, on_delete=models.CASCADE)\n    def __str__(self) -> str:\n        return str(self.valeur)\n    class Meta:\n        verbose_name = \"Note\"\n        verbose_name_plural = \"Notes\"",
         "detail": "notes.models",
         "documentation": {}
     },
@@ -605,7 +671,7 @@
         "kind": 2,
         "importPath": "notes.views",
         "description": "notes.views",
-        "peekOfCode": "def matiere(request, matiere_id):\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    return render(request, \"matieres/show.html\", locals())\ndef niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    try:\n        eleve = Eleve.objects.get( pk=eleve_id)\n        matiere = Matiere.objects.get( pk=matiere_id)",
+        "peekOfCode": "def matiere(request, matiere_id):\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    return render(request, \"matieres/show.html\", locals())\ndef niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    form = NoteForm()",
         "detail": "notes.views",
         "documentation": {}
     },
@@ -614,7 +680,7 @@
         "kind": 2,
         "importPath": "notes.views",
         "description": "notes.views",
-        "peekOfCode": "def niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    try:\n        eleve = Eleve.objects.get( pk=eleve_id)\n        matiere = Matiere.objects.get( pk=matiere_id)\n    except ( Matiere.DoesNotExist) as e1:\n        error_message = \"Une erreur est survenue: La matière spécifiée n'existe pas.\"\n        return HttpResponse(error_message)",
+        "peekOfCode": "def niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    form = NoteForm()\n    if request.method == \"POST\":\n        form = NoteForm(request.POST)\n        if form.is_valid():",
         "detail": "notes.views",
         "documentation": {}
     },
@@ -623,7 +689,7 @@
         "kind": 2,
         "importPath": "notes.views",
         "description": "notes.views",
-        "peekOfCode": "def add_note(request, eleve_id, matiere_id):\n    try:\n        eleve = Eleve.objects.get( pk=eleve_id)\n        matiere = Matiere.objects.get( pk=matiere_id)\n    except ( Matiere.DoesNotExist) as e1:\n        error_message = \"Une erreur est survenue: La matière spécifiée n'existe pas.\"\n        return HttpResponse(error_message)\n    except (Eleve.DoesNotExist) as e2:\n        error_message = \"Une erreur est survenue: L'élève spécifié n'existe pas.\"\n        return HttpResponse(error_message)",
+        "peekOfCode": "def add_note(request, eleve_id, matiere_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    form = NoteForm()\n    if request.method == \"POST\":\n        form = NoteForm(request.POST)\n        if form.is_valid():\n            valeur = form.cleaned_data.get(\"valeur\")\n            if matiere not in eleve.niveau.matiere_set.all():\n                error_message = f\"L'élève {eleve.nom} {eleve.prenom} ne suit pas le cours de matricule {matiere_id}\"",
         "detail": "notes.views",
         "documentation": {}
     },
