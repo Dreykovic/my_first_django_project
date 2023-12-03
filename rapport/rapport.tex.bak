@@ -61,5 +61,6 @@ Ensuite on corrige le modèle en rendant l'attribut \textbf{user} nullable:
 \begin{center}
 \includegraphics[scale=0.3]{images/error.png}
 \end{center}
+\item Nous allons gérer l'accès aux 
 \end{enumerate}
 \end{document}
