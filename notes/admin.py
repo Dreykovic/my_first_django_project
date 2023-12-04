@@ -5,6 +5,7 @@ from notes.models import  Eleve, Enseignant, Matiere, Niveau, Note
 
 
 class EleveAdmin(admin.ModelAdmin):
+    readonly_fields = ["sexe","nom","prenom"]
     form = EleveForm
 
 

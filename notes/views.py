@@ -7,8 +7,8 @@ from .models import Matiere, Note
 from .models import Niveau
 from .models import Eleve
 from .forms import NoteForm
-from django.contrib.auth import authenticate
 
+from django.contrib.auth.decorators import login_required, permission_required
 
 
 def index(request):
@@ -47,35 +47,23 @@ def niveau(request, niveau_id):
             
 
 
+@login_required
+@permission_required('notes.add_note', raise_exception=True)
 def add_note(request, eleve_id, matiere_id):
-    if request.user.is_authenticated:
-        eleve = get_object_or_404(Eleve, pk=eleve_id)
-        matiere = get_object_or_404(Matiere, pk=matiere_id)
-        form = NoteForm()
+    eleve = get_object_or_404(Eleve, pk=eleve_id)
+    matiere = get_object_or_404(Matiere, pk=matiere_id)
+    form = NoteForm()
 
-        if request.method == "POST":
-            form = NoteForm(request.POST)
-            if form.is_valid():
-                valeur = form.cleaned_data.get("valeur")
-                if matiere not in eleve.niveau.matiere_set.all():
-                    error_message = f"L'élève {eleve.nom} {eleve.prenom} ne suit pas le cours de matricule {matiere_id}"
-                    return HttpResponse(error_message)
+    if request.method == "POST":
+        form = NoteForm(request.POST)
+        if form.is_valid():
+            valeur = form.cleaned_data.get("valeur")
+            if matiere not in eleve.niveau.matiere_set.all():
+                error_message = f"L'élève {eleve.nom} {eleve.prenom} ne suit pas le cours de matricule {matiere_id}"
+                return HttpResponse(error_message)
 
-                Note.objects.create(valeur=valeur, eleve=eleve, matiere=matiere)
-                return render(request, "eleves/show.html", {"eleve": eleve})
+            Note.objects.create(valeur=valeur, eleve=eleve, matiere=matiere)
+            return render(request, "eleves/show.html", {"eleve": eleve})
 
-        context = {"matiere": matiere, "eleve": eleve, "form": form}
-        return render(request, "notes/add_note.html", context)
-
-
-def login(request):
-    username = request.POST["username"]
-    password = request.POST["password"]
-    user = authenticate(request, username=username, password=password)
-    if user is not None:
-        login(request, user)
-        # Redirect to a success page.
-        ...
-    else:
-        # Return an 'invalid login' error message.
-        ...
+    context = {"matiere": matiere, "eleve": eleve, "form": form}
+    return render(request, "notes/add_note.html", context)
