@@ -33,13 +33,17 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    # Gestion de l'authentification
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    #
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
      #Ajout de l'application notes
     'notes.apps.NotesConfig',
+    # Ajout de import export
+    'import_export'
 ]
 
 MIDDLEWARE = [
