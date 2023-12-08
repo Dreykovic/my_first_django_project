@@ -3,14 +3,24 @@ from django.shortcuts import get_object_or_404, render
 # Create your views here.
 from django.http import HttpResponse
 
+from Templating_ifnti.controlleur import generate_pdf
+
 from .models import Matiere, Note
 from .models import Niveau
 from .models import Eleve
 from .forms import NoteForm
+from os.path import dirname, abspath
 
 from django.contrib.auth.decorators import login_required, permission_required
 
 
+def listeEleves(request):
+    eleves = Eleve.objects.all()
+    liste = {"eleves":eleves}
+    print(liste)
+    generate_pdf(liste)
+    with open( dirname(abspath(__file__)) +"/pdf/mon.pdf", "rb") as my_file:
+        return HttpResponse(my_file.read(), content_type = "application/pdf")
 def index(request):
     return render(request, "notes/accueuil.html")
 
@@ -67,3 +77,4 @@ def add_note(request, eleve_id, matiere_id):
 
     context = {"matiere": matiere, "eleve": eleve, "form": form}
     return render(request, "notes/add_note.html", context)
+
