@@ -42,14 +42,8 @@
 	\textbf{Matricule}  & \textbf{Nom}            & \textbf{Prénom} &
 	\textbf{Sexe}       & \textbf{Date Naissance}                      \\ \hline
 	
-	12 & audrey           & audrey &
-	M      & 18/11/2001                           \\ \hline
-	
-	12 & audrey           & audrey &
-	M      & 18/11/2001                           \\ \hline
-	
-	12 & audrey           & audrey &
-	M      & 18/11/2001                           \\ \hline
+	Abl20231208080940334344 & Abla           & Adjo &
+	M      & 2023-12-08                           \\ \hline
 	
 \end{longtable}
 \end{document}

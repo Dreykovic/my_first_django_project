@@ -19,7 +19,16 @@ def listeEleves(request):
     liste = {"eleves":eleves}
     print(liste)
     generate_pdf(liste)
-    with open( dirname(abspath(__file__)) +"/pdf/mon.pdf", "rb") as my_file:
+    with open( dirname(dirname(abspath(__file__)))+ "/Templating_ifnti/out/liste_eleves.pdf", "rb") as my_file:
+        return HttpResponse(my_file.read(), content_type = "application/pdf")
+
+def liste_niveauElv(request, niveau_id):
+    niveau = get_object_or_404(Niveau, pk= niveau_id)
+    print(niveau)
+    eleves = niveau.eleve_set.values()
+    liste = {"eleves":list(eleves.values())}
+    generate_pdf(liste)
+    with open( dirname(dirname(abspath(__file__)))+ "/Templating_ifnti/out/liste_eleves.pdf", "rb") as my_file:
         return HttpResponse(my_file.read(), content_type = "application/pdf")
 def index(request):
     return render(request, "notes/accueuil.html")

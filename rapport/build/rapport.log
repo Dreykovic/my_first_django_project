@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.23)  8 DEC 2023 10:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.10.23)  8 DEC 2023 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -652,24 +652,46 @@ File: images/pdf.png Graphic file (type png)
 <use images/pdf.png>
 Package pdftex.def Info: images/pdf.png  used on input line 54.
 (pdftex.def)             Requested size: 277.33826pt x 150.26253pt.
- [4 <./images/test.png> <./images/pdf.png>] (build/rapport.aux) ) 
+<images/gen.png, id=29, 853.1875pt x 483.8075pt>
+File: images/gen.png Graphic file (type png)
+<use images/gen.png>
+Package pdftex.def Info: images/gen.png  used on input line 58.
+(pdftex.def)             Requested size: 426.59271pt x 241.90315pt.
+<images/pdfout.png, id=30, 576.1525pt x 448.67625pt>
+File: images/pdfout.png Graphic file (type png)
+<use images/pdfout.png>
+Package pdftex.def Info: images/pdfout.png  used on input line 61.
+(pdftex.def)             Requested size: 172.84708pt x 134.60391pt.
+<images/gen1.png, id=31, 2220.295pt x 636.3775pt>
+File: images/gen1.png Graphic file (type png)
+<use images/gen1.png>
+Package pdftex.def Info: images/gen1.png  used on input line 65.
+(pdftex.def)             Requested size: 444.05113pt x 127.27324pt.
+ [4 <./images/test.png> <./images/pdf.png> <./images/gen.png> <./images/pdfout.
+png>]
+<images/pdfout1.png, id=39, 576.1525pt x 448.67625pt>
+File: images/pdfout1.png Graphic file (type png)
+<use images/pdfout1.png>
+Package pdftex.def Info: images/pdfout1.png  used on input line 68.
+(pdftex.def)             Requested size: 172.84708pt x 134.60391pt.
+ [5 <./images/gen1.png> <./images/pdfout1.png>] (build/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 15281 strings out of 478287
- 296805 string characters out of 5849288
+ 15309 strings out of 478287
+ 297349 string characters out of 5849288
  579310 words of memory out of 5000000
- 33214 multiletter control sequences out of 15000+600000
+ 33238 multiletter control sequences out of 15000+600000
  506569 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,6n,89p,420b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
-Output written on build/rapport.pdf (4 pages, 890997 bytes).
+{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lm
+bx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
+Output written on build/rapport.pdf (5 pages, 1141766 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
