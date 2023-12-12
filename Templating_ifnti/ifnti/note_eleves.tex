@@ -19,7 +19,7 @@
 \usepackage{longtable}
 \usepackage{phonenumbers}
 \usepackage{telprint}
-\graphicspath{ {/home/audrey/Documents/workspace/django/TP/tp6/my_first_django_project/Templating_ifnti/out/images/} }
+\graphicspath{ {\VAR{image_path}} }
 
 \begin{document}
 \begin{minipage}{12cm}
@@ -36,23 +36,14 @@
 	\end{center}
 \end{minipage}
 \begin{center}
-	\underline{\textbf{NOtES DES ETUDIANTS EN Mathématiques}}
+	\underline{\textbf{NOtES DES ETUDIANTS EN \VAR{matiere.nom}}}
 \end{center}
 \begin{longtable}{|l|l|l|l|l|l|} \hline
 	\textbf{Matricule} & \textbf{Nom}             & \textbf{Prénom}  &
 	\textbf{Sexe}      & \textbf{Date Naissance}  & \textbf{note}      \\ \hline
-	
-	aza20231127163051902238       & azaz            & zazaza &
-	F     & 2023-11-07 & 13.0  \\ \hline
-	
-	TOU20231127163114413182       & TOUTABIZZI            & Dialo &
-	M     & 2023-11-21 & 15.0  \\ \hline
-	
-	BAK20231127163126336338       & BAKI            & Tchasséyi &
-	F     & 2023-11-15 & 14.0  \\ \hline
-	
-	AMO20231127163133490959       & AMONA            & AUdrey &
-	M     & 2023-11-06 & 9.0  \\ \hline
-	
+	\BLOCK{for note in notes}
+	\VAR{note.eleve.id}       & \VAR{note.eleve.nom}            & \VAR{note.eleve.prenom} &
+	\VAR{note.eleve.sexe}     & \VAR{note.eleve.date_naissance} & \VAR{note.valeur}  \\ \hline
+	\BLOCK{endfor}
 \end{longtable}
 \end{document}

@@ -12,13 +12,19 @@ from .forms import NoteForm
 from os.path import dirname, abspath
 
 from django.contrib.auth.decorators import login_required, permission_required
-
+def noteEleves(request, matiere_id):
+    notes = Note.objects.filter(matiere_id = matiere_id)
+    liste = {"notes":notes, 'matiere': Matiere.objects.get(pk=matiere_id) }
+    print(liste)
+    generate_pdf(liste, "note_eleves.tex", "note_eleves.pdf")
+    with open( dirname(dirname(abspath(__file__)))+ "/Templating_ifnti/out/note_eleves.pdf", "rb") as my_file:
+        return HttpResponse(my_file.read(), content_type = "application/pdf")
 
 def listeEleves(request):
     eleves = Eleve.objects.all()
     liste = {"eleves":eleves}
     print(liste)
-    generate_pdf(liste)
+    generate_pdf(liste, "liste_eleves.tex", "liste_eleves.pdf")
     with open( dirname(dirname(abspath(__file__)))+ "/Templating_ifnti/out/liste_eleves.pdf", "rb") as my_file:
         return HttpResponse(my_file.read(), content_type = "application/pdf")
 
@@ -27,7 +33,7 @@ def liste_niveauElv(request, niveau_id):
     print(niveau)
     eleves = niveau.eleve_set.values()
     liste = {"eleves":list(eleves.values())}
-    generate_pdf(liste)
+    generate_pdf(liste, "liste_eleves.tex", "liste_eleves.pdf")
     with open( dirname(dirname(abspath(__file__)))+ "/Templating_ifnti/out/liste_eleves.pdf", "rb") as my_file:
         return HttpResponse(my_file.read(), content_type = "application/pdf")
 def index(request):

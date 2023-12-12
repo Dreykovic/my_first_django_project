@@ -5,7 +5,7 @@ from latex import build_pdf
 from os.path import dirname, abspath
 
 
-def generate_pdf(context):
+def generate_pdf(context, template, pdf):
     """INSTACIATION D'UN NOUVEL ENVIRONNEMENT AVEC DES OPTIONS DE BALISES PERSONNALISÉES"""
     j2_env = Environment(
         variable_start_string="\VAR{",
@@ -17,7 +17,7 @@ def generate_pdf(context):
     )
     """DECLARATION DE FICHIER"""
     #Fichier à lire contenant le template avec les balises
-    fichier_in = open(dirname(abspath(__file__))+"/ifnti/liste_eleves.tex","r")
+    fichier_in = open(dirname(abspath(__file__))+"/ifnti/"+template,"r")
     
     #Fichier en sortie accueillant les données fournies
     fichier_out = open(dirname(abspath(__file__))+"/out/template_out.tex","w")
@@ -34,9 +34,9 @@ def generate_pdf(context):
     fichier_out.close()
     
     mon_pdf = build_pdf(open(dirname(abspath(__file__))+"/out/template_out.tex","r"))
-    mon_pdf.save_to(dirname(abspath(__file__))+"/out/liste_eleves.pdf")
+    mon_pdf.save_to(dirname(abspath(__file__))+"/out/"+pdf)
     """FERMETURE DE CANAUX"""
     fichier_in.close()
     
 monContext = {'eleves': [{"id":"12","nom": "audrey","prenom":"audrey","sexe":"M","date_naissance":"18/11/2001"},{"id":"12","nom": "audrey","prenom":"audrey","sexe":"M","date_naissance":"18/11/2001"},{"id":"12","nom": "audrey","prenom":"audrey","sexe":"M","date_naissance":"18/11/2001"}]}
-generate_pdf(monContext)
+# generate_pdf(monContext)
