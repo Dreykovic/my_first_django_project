@@ -1,0 +1,36 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+Swal.fire({
+	position: "top-end",
+	icon: "success",
+	title: "Your work has been saved",
+	showConfirmButton: false,
+	timer: 1500
+  });
+
+  $(document).ready(function() {
+	$(document).ready(function() {
+		function informerServeurDuRechargement() {
+			$.ajax({
+				url: 'votre_page_jsp_de_notification.jsp', // L'URL de votre page de notification
+				type: 'GET', // La méthode HTTP que vous souhaitez utiliser (GET, POST, etc.)
+			})
+			.done(function(data) {
+				// Traitement en cas de succès de la requête
+				// Vous pouvez traiter la réponse du serveur ici si nécessaire
+			})
+			.fail(function(xhr, status, error) {
+				// Gestion des erreurs
+			});
+		}
+	
+		informerServeurDuRechargement(); // Appel initial pour informer le serveur lors du chargement de la page
+	
+		// Écouteur d'événement pour détecter le rechargement de la page côté client
+		$(window).on('beforeunload', function() {
+			informerServeurDuRechargement(); // Informer le serveur lors du rechargement de la page
+		});
+	});
+	
+});

@@ -9,5 +9,7 @@ urlpatterns = [
     path("matiere/<int:matiere_id>/", views.matiere, name="matiere"),
     path("niveau/<int:niveau_id>/", views.niveau, name="niveau"),
     path("add_note/<str:eleve_id>/<int:matiere_id>/", views.add_note, name="add-note"),
+    path("eleves/pdf/", views.listeEleves, name="eleves-pdf"),
+    path("elevesNiv/pdf/<int:niveau_id>", views.liste_niveauElv, name="eleves-niv-pdf"),
     
 ]
