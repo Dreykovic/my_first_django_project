@@ -1,3 +1,4 @@
+from audioop import avg
 from django.shortcuts import get_object_or_404, render
 
 # Create your views here.
@@ -10,6 +11,12 @@ from .models import Niveau
 from .models import Eleve
 from .forms import NoteForm
 from os.path import dirname, abspath
+# from django.db.models import Avg, Value
+# from django.db.models.functions import Coalesce
+from django.db.models import Avg, FloatField
+
+
+
 
 from django.contrib.auth.decorators import login_required, permission_required
 def noteEleves(request, matiere_id):
@@ -18,6 +25,21 @@ def noteEleves(request, matiere_id):
     print(liste)
     generate_pdf(liste, "note_eleves.tex", "note_eleves.pdf")
     with open( dirname(dirname(abspath(__file__)))+ "/Templating_ifnti/out/note_eleves.pdf", "rb") as my_file:
+        return HttpResponse(my_file.read(), content_type = "application/pdf")
+    
+def notesSynthese(request, eleve_id):
+    print(10)
+
+    notes = Note.objects.filter(eleve_id=eleve_id)
+    notesPArMat = notes.values('matiere__nom')
+    notes = notesPArMat.annotate(moyenne_note=Avg('valeur', output_field=FloatField())).order_by('moyenne_note')
+
+    print(notes)
+    # print(0000)
+    liste = {"notes":notes, 'eleve': Eleve.objects.get(pk=eleve_id) }
+    
+    generate_pdf(liste, "note_synthese.tex", "note_synthese.pdf")
+    with open( dirname(dirname(abspath(__file__)))+ "/Templating_ifnti/out/note_synthese.pdf", "rb") as my_file:
         return HttpResponse(my_file.read(), content_type = "application/pdf")
 
 def listeEleves(request):

@@ -19,7 +19,7 @@
 \usepackage{longtable}
 \usepackage{phonenumbers}
 \usepackage{telprint}
-\graphicspath{ {/home/audrey/Documents/workspace/django/TP/tp6/my_first_django_project/Templating_ifnti/out/images/} }
+\graphicspath{ {\VAR{image_path}} }
 
 \begin{document}
 \begin{minipage}{12cm}
@@ -36,14 +36,12 @@
 	\end{center}
 \end{minipage}
 \begin{center}
-	\underline{\textbf{MOYENNE DES NOtES DE L'ETUDIANT azaz zazaza}}
+	\underline{\textbf{MOYENNE DES NOtES DE L'ETUDIANT \VAR{eleve.nom} \VAR{eleve.prenom}}}
 \end{center}
 \begin{longtable}{|l|l|} \hline
 	\textbf{Matiere}    & \textbf{Moyenne} \\ \hline
-	
-	Mathématiques & 13.0 \\ \hline
-	
-	Anglais & 14.0 \\ \hline
-	
+	\BLOCK{for note in notes}
+	\VAR{note.matiere__nom} & \VAR{note.moyenne_note} \\ \hline
+	\BLOCK{endfor}
 \end{longtable}
 \end{document}

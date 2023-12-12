@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.20)  12 DEC 2023 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.11.20)  12 DEC 2023 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -690,24 +690,40 @@ File: images/notesnav.png Graphic file (type png)
 <use images/notesnav.png>
 Package pdftex.def Info: images/notesnav.png  used on input line 84.
 (pdftex.def)             Requested size: 354.51822pt x 242.1002pt.
- [6 <./images/notes.png> <./images/notesnav.png>] (build/rapport.aux) ) 
+<images/sunt.png, id=49, 2252.415pt x 827.09pt>
+File: images/sunt.png Graphic file (type png)
+<use images/sunt.png>
+Package pdftex.def Info: images/sunt.png  used on input line 89.
+(pdftex.def)             Requested size: 450.47502pt x 165.41505pt.
+
+Overfull \hbox (0.20316pt too wide) in paragraph at lines 89--90
+ [] 
+ []
+
+<images/suntNav.png, id=50, 1100.11pt x 725.71124pt>
+File: images/suntNav.png Graphic file (type png)
+<use images/suntNav.png>
+Package pdftex.def Info: images/suntNav.png  used on input line 93.
+(pdftex.def)             Requested size: 440.03621pt x 290.27936pt.
+[6 <./images/notes.png> <./images/notesnav.png> <./images/sunt.png>] [7 <./imag
+es/suntNav.png>] (build/rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 15330 strings out of 480177
- 297771 string characters out of 5893866
+ 15344 strings out of 480177
+ 298050 string characters out of 5893866
  574511 words of memory out of 5000000
- 33019 multiletter control sequences out of 15000+600000
+ 33031 multiletter control sequences out of 15000+600000
  506569 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  83i,6n,89p,420b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/sh
-are/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/
-lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb>
-Output written on build/rapport.pdf (6 pages, 1590339 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-e
+c.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr17.pfb>
+Output written on build/rapport.pdf (7 pages, 1799042 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
