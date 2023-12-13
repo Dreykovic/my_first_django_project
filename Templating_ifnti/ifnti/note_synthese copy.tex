@@ -19,7 +19,7 @@
 \usepackage{longtable}
 \usepackage{phonenumbers}
 \usepackage{telprint}
-\graphicspath{ {/home/audrey/Documents/workspace/django/TP/tp6/my_first_django_project/Templating_ifnti/out/images/} }
+\graphicspath{ {\VAR{image_path}} }
 
 \begin{document}
 \begin{minipage}{12cm}
@@ -36,25 +36,14 @@
 	\end{center}
 \end{minipage}
 \begin{center}
-	\underline{\textbf{MOYENNE DES NOtES DE L'ETUDIANT azaz zazaza}}
+	\underline{\textbf{MOYENNE DES NOtES DE L'ETUDIANT \VAR{eleve.nom} \VAR{eleve.prenom}}}
 \end{center}
-\begin{longtable}{|l|l|} \hline
-	\textbf{Matiere}    & \textbf{Moyenne} \\ \hline
+\begin{longtable}{|l|l|l|l|l|l|} \hline
+	\textbf{Matricule} & \textbf{Nom}             & \textbf{Prénom}  &
+	\textbf{Sexe}      & \textbf{Date Naissance}  & \textbf{note}      \\ \hline
 	
-<<<<<<< HEAD
-	12 & audrey           & audrey &
-	M      & 18/11/2001                           \\ \hline
-	
-	12 & audrey           & audrey &
-	M      & 18/11/2001                           \\ \hline
-	
-	12 & audrey           & audrey &
-	M      & 18/11/2001                           \\ \hline
-=======
-	Mathématiques & 13.0 \\ \hline
-	
-	Anglais & 14.0 \\ \hline
->>>>>>> debd252df6c40cad6fb12d0c7d7b891f2d70ab9e
+	\VAR{0}       & \VAR{0}            & \VAR{0} &
+	\VAR{0}     & \VAR{0} & \VAR{0}  \\ \hline
 	
 \end{longtable}
 \end{document}

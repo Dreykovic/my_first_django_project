@@ -1,9 +1,9 @@
 INFO:  latexindent version 3.15, 2022-01-21, a script to indent .tex files
        latexindent lives here: /usr/share/texlive/texmf-dist/scripts/latexindent/
-       Fri Dec  8 09:40:11 2023
-       Filename: /home/audrey/Documents/django/TP/tp6/my_first_django_project/Templating_ifnti/ifnti/liste_eleves.tex
+       Tue Dec 12 20:48:50 2023
+       Filename: /home/audrey/Documents/workspace/django/TP/tp6/my_first_django_project/Templating_ifnti/ifnti/note_synthese.tex
 INFO:  Processing switches:
-INFO:  Directory for backup files and indent.log: /home/audrey/Documents/django/TP/tp6/my_first_django_project/Templating_ifnti/ifnti
+INFO:  Directory for backup files and indent.log: /home/audrey/Documents/workspace/django/TP/tp6/my_first_django_project/Templating_ifnti/ifnti
 INFO:  YAML settings read: defaultSettings.yaml
        Reading defaultSettings.yaml from /usr/share/texlive/texmf-dist/scripts/latexindent/defaultSettings.yaml
 INFO:  YAML settings read: indentconfig.yaml or .indentconfig.yaml
