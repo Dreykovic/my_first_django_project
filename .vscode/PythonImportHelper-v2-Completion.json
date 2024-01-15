@@ -1,5 +1,61 @@
 [
     {
+        "label": "abspath",
+        "importPath": "posixpath",
+        "description": "posixpath",
+        "isExtraImport": true,
+        "detail": "posixpath",
+        "documentation": {}
+    },
+    {
+        "label": "Environment",
+        "importPath": "jinja2",
+        "description": "jinja2",
+        "isExtraImport": true,
+        "detail": "jinja2",
+        "documentation": {}
+    },
+    {
+        "label": "build_pdf",
+        "importPath": "latex",
+        "description": "latex",
+        "isExtraImport": true,
+        "detail": "latex",
+        "documentation": {}
+    },
+    {
+        "label": "dirname",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "abspath",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "dirname",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "abspath",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -73,59 +129,36 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.conf",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "django.core.validators",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.db",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.core.validators",
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "MaxValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
         "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.core.validators",
         "documentation": {}
     },
     {
@@ -226,6 +259,22 @@
         "documentation": {}
     },
     {
+        "label": "ImportExportModelAdmin",
+        "importPath": "import_export.admin",
+        "description": "import_export.admin",
+        "isExtraImport": true,
+        "detail": "import_export.admin",
+        "documentation": {}
+    },
+    {
+        "label": "resources",
+        "importPath": "import_export",
+        "description": "import_export",
+        "isExtraImport": true,
+        "detail": "import_export",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -242,19 +291,20 @@
         "documentation": {}
     },
     {
-        "label": "MinValueValidator",
-        "importPath": "django.core.validators",
-        "description": "django.core.validators",
+        "label": "datetime",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.core.validators",
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "MaxValueValidator",
-        "importPath": "django.core.validators",
-        "description": "django.core.validators",
+        "label": "unique",
+        "importPath": "enum",
+        "description": "enum",
         "isExtraImport": true,
-        "detail": "django.core.validators",
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -266,11 +316,27 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "avg",
+        "importPath": "audioop",
+        "description": "audioop",
+        "isExtraImport": true,
+        "detail": "audioop",
         "documentation": {}
     },
     {
@@ -298,12 +364,70 @@
         "documentation": {}
     },
     {
+        "label": "generate_pdf",
+        "importPath": "Templating_ifnti.controlleur",
+        "description": "Templating_ifnti.controlleur",
+        "isExtraImport": true,
+        "detail": "Templating_ifnti.controlleur",
+        "documentation": {}
+    },
+    {
+        "label": "Avg",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "FloatField",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "generate_pdf",
+        "kind": 2,
+        "importPath": "Templating_ifnti.controlleur",
+        "description": "Templating_ifnti.controlleur",
+        "peekOfCode": "def generate_pdf(context, template, pdf):\n    \"\"\"INSTACIATION D'UN NOUVEL ENVIRONNEMENT AVEC DES OPTIONS DE BALISES PERSONNALISÉES\"\"\"\n    j2_env = Environment(\n        variable_start_string=\"\\VAR{\",\n        variable_end_string=\"}\",\n        block_start_string=\"\\BLOCK{\",\n        block_end_string=\"}\",\n        comment_start_string=\"\\COMMENT{\",\n        comment_end_string=\"}\",\n    )",
+        "detail": "Templating_ifnti.controlleur",
+        "documentation": {}
+    },
+    {
+        "label": "monContext",
+        "kind": 5,
+        "importPath": "Templating_ifnti.controlleur",
+        "description": "Templating_ifnti.controlleur",
+        "peekOfCode": "monContext = {'eleves': [{\"id\":\"12\",\"nom\": \"audrey\",\"prenom\":\"audrey\",\"sexe\":\"M\",\"date_naissance\":\"18/11/2001\"},{\"id\":\"12\",\"nom\": \"audrey\",\"prenom\":\"audrey\",\"sexe\":\"M\",\"date_naissance\":\"18/11/2001\"},{\"id\":\"12\",\"nom\": \"audrey\",\"prenom\":\"audrey\",\"sexe\":\"M\",\"date_naissance\":\"18/11/2001\"}]}\n# generate_pdf(monContext)",
+        "detail": "Templating_ifnti.controlleur",
         "documentation": {}
     },
     {
@@ -329,7 +453,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-uw6c6z*$^+jxj0sv#%)l$w(mndkq&v0k26^%b-j*dnwt*p3e-0'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-uw6c6z*$^+jxj0sv#%)l$w(mndkq&v0k26^%b-j*dnwt*p3e-0'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    # Gestion de l'authentification\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -338,7 +462,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    # Gestion de l'authentification\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    #\n    'django.contrib.sessions',",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -347,7 +471,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n     #Ajout de l'application notes",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    # Gestion de l'authentification\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    #\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -356,7 +480,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n     #Ajout de l'application notes\n    'notes.apps.NotesConfig',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    # Gestion de l'authentification\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    #\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n     #Ajout de l'application notes",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -374,7 +498,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "ROOT_URLCONF = 'ifnti_l3.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "peekOfCode": "ROOT_URLCONF = 'ifnti_l3.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -383,7 +507,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [os.path.join(BASE_DIR, 'templates')],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -392,7 +516,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'ifnti_l3.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'ifnti_l3.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# DATABASES = {",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -401,7 +525,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.settings",
         "description": "ifnti_l3.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# DATABASES = {\n#     \"default\": {\n#         \"ENGINE\": \"django.db.backends.postgresql\",\n#         \"NAME\": \"django\",",
         "detail": "ifnti_l3.settings",
         "documentation": {}
     },
@@ -473,7 +597,7 @@
         "kind": 5,
         "importPath": "ifnti_l3.urls",
         "description": "ifnti_l3.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"notes.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"\", include(\"notes.urls\")),\n    path('accounts/', include('django.contrib.auth.urls')),\n]",
         "detail": "ifnti_l3.urls",
         "documentation": {}
     },
@@ -491,44 +615,8 @@
         "kind": 6,
         "importPath": "notes.migrations.0001_initial",
         "description": "notes.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Eleve',\n            fields=[\n                ('nom', models.CharField(max_length=50)),\n                ('prenom', models.CharField(max_length=50)),",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Eleve',\n            fields=[\n                ('nom', models.CharField(max_length=50)),",
         "detail": "notes.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "notes.migrations.0002_alter_eleve_id",
-        "description": "notes.migrations.0002_alter_eleve_id",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='eleve',\n            name='id',\n            field=models.BigIntegerField(primary_key=True, serialize=False),\n        ),",
-        "detail": "notes.migrations.0002_alter_eleve_id",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "notes.migrations.0003_remove_eleve_matieres",
-        "description": "notes.migrations.0003_remove_eleve_matieres",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0002_alter_eleve_id'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='eleve',\n            name='matieres',\n        ),\n    ]",
-        "detail": "notes.migrations.0003_remove_eleve_matieres",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "notes.migrations.0004_alter_note_valeur",
-        "description": "notes.migrations.0004_alter_note_valeur",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0003_remove_eleve_matieres'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='note',\n            name='valeur',\n            field=models.IntegerField(null=True),\n        ),",
-        "detail": "notes.migrations.0004_alter_note_valeur",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "notes.migrations.0005_alter_note_valeur",
-        "description": "notes.migrations.0005_alter_note_valeur",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('notes', '0004_alter_note_valeur'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='note',\n            name='valeur',\n            field=models.FloatField(null=True),\n        ),",
-        "detail": "notes.migrations.0005_alter_note_valeur",
         "documentation": {}
     },
     {
@@ -536,7 +624,88 @@
         "kind": 6,
         "importPath": "notes.admin",
         "description": "notes.admin",
-        "peekOfCode": "class EleveAdmin(admin.ModelAdmin):\n    form = EleveForm\n# Register your models here.\nadmin.site.register(Matiere)\nadmin.site.register(Eleve,EleveAdmin)\nadmin.site.register(Enseignant)\nadmin.site.register(Niveau)\nadmin.site.register(Note)",
+        "peekOfCode": "class EleveAdmin(ImportExportModelAdmin):\n    # readonly_fields = [\"sexe\",\"nom\",\"prenom\"]\n    form = EleveForm\nclass EleveResource(resources.ModelResource):\n    # niveau = fields.Field(\n    #     column_name='niveau',\n    #     attribute='niveau',\n    #     widget=ForeignKeyWidget(Niveau, field='nom'))\n    class Meta:\n        model = Eleve",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "EleveResource",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class EleveResource(resources.ModelResource):\n    # niveau = fields.Field(\n    #     column_name='niveau',\n    #     attribute='niveau',\n    #     widget=ForeignKeyWidget(Niveau, field='nom'))\n    class Meta:\n        model = Eleve\n        resource_class = Eleve\n        # fields = (\"niveau\",)\n#Matiere        ",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MatiereAdmin",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class MatiereAdmin(ImportExportModelAdmin):\n    pass\nclass MatiereResource(resources.ModelResource):\n    class Meta:\n        model = Matiere\n        resource_class = Matiere\n#Enseignant        \nclass EnseignantAdmin(ImportExportModelAdmin):\n    pass\nclass EnseignantResource(resources.ModelResource):",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MatiereResource",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class MatiereResource(resources.ModelResource):\n    class Meta:\n        model = Matiere\n        resource_class = Matiere\n#Enseignant        \nclass EnseignantAdmin(ImportExportModelAdmin):\n    pass\nclass EnseignantResource(resources.ModelResource):\n    class Meta:\n        model = Enseignant",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "EnseignantAdmin",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class EnseignantAdmin(ImportExportModelAdmin):\n    pass\nclass EnseignantResource(resources.ModelResource):\n    class Meta:\n        model = Enseignant\n        resource_class = Enseignant\n#Note\nclass NoteAdmin(ImportExportModelAdmin):\n    pass\nclass NoteResource(resources.ModelResource):",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "EnseignantResource",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class EnseignantResource(resources.ModelResource):\n    class Meta:\n        model = Enseignant\n        resource_class = Enseignant\n#Note\nclass NoteAdmin(ImportExportModelAdmin):\n    pass\nclass NoteResource(resources.ModelResource):\n    class Meta:\n        model = Note",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAdmin",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class NoteAdmin(ImportExportModelAdmin):\n    pass\nclass NoteResource(resources.ModelResource):\n    class Meta:\n        model = Note\n        resource_class = Note\n#Niveau\nclass NiveauAdmin(ImportExportModelAdmin):\n    pass\nclass NiveauResource(resources.ModelResource):",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "NoteResource",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class NoteResource(resources.ModelResource):\n    class Meta:\n        model = Note\n        resource_class = Note\n#Niveau\nclass NiveauAdmin(ImportExportModelAdmin):\n    pass\nclass NiveauResource(resources.ModelResource):\n    class Meta:\n        model = Niveau",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "NiveauAdmin",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class NiveauAdmin(ImportExportModelAdmin):\n    pass\nclass NiveauResource(resources.ModelResource):\n    class Meta:\n        model = Niveau\n        resource_class = Niveau\n# admin.site.register(Eleve, EleveAdmin)\n# Register your models here.\nadmin.site.register(Matiere, MatiereAdmin)\nadmin.site.register(Eleve,EleveAdmin)",
+        "detail": "notes.admin",
+        "documentation": {}
+    },
+    {
+        "label": "NiveauResource",
+        "kind": 6,
+        "importPath": "notes.admin",
+        "description": "notes.admin",
+        "peekOfCode": "class NiveauResource(resources.ModelResource):\n    class Meta:\n        model = Niveau\n        resource_class = Niveau\n# admin.site.register(Eleve, EleveAdmin)\n# Register your models here.\nadmin.site.register(Matiere, MatiereAdmin)\nadmin.site.register(Eleve,EleveAdmin)\nadmin.site.register(Enseignant, EnseignantAdmin)\nadmin.site.register(Niveau, NiveauAdmin)",
         "detail": "notes.admin",
         "documentation": {}
     },
@@ -572,7 +741,7 @@
         "kind": 6,
         "importPath": "notes.models",
         "description": "notes.models",
-        "peekOfCode": "class Niveau(models.Model):\n    nom = models.CharField(max_length=2,unique=True)\n    def __str__(self) -> str:\n        return self.nom\nclass Personne(models.Model):\n    nom = models.CharField(max_length=50)\n    prenom = models.CharField(max_length=50)\n    sexe = models.CharField(choices=((\"M\", \"Masculin\"), (\"F\",\"Feminin\")),max_length=20)\n    date_naissance = models.DateField()\n    class Meta:",
+        "peekOfCode": "class Niveau(models.Model):\n    nom = models.CharField(max_length=2,unique=True)\n    def __str__(self) -> str:\n        return self.nom\nclass Personne(models.Model):\n    nom = models.CharField(max_length=50)\n    prenom = models.CharField(max_length=50)\n    sexe = models.CharField(choices=((\"M\", \"Masculin\"), (\"F\",\"Feminin\")),max_length=20)\n    date_naissance = models.DateField()\n    user = models.OneToOneField(User, on_delete=models.CASCADE)",
         "detail": "notes.models",
         "documentation": {}
     },
@@ -581,7 +750,7 @@
         "kind": 6,
         "importPath": "notes.models",
         "description": "notes.models",
-        "peekOfCode": "class Personne(models.Model):\n    nom = models.CharField(max_length=50)\n    prenom = models.CharField(max_length=50)\n    sexe = models.CharField(choices=((\"M\", \"Masculin\"), (\"F\",\"Feminin\")),max_length=20)\n    date_naissance = models.DateField()\n    class Meta:\n        abstract = True\nclass Enseignant(Personne):\n    pass\n    def __str__(self) -> str:",
+        "peekOfCode": "class Personne(models.Model):\n    nom = models.CharField(max_length=50)\n    prenom = models.CharField(max_length=50)\n    sexe = models.CharField(choices=((\"M\", \"Masculin\"), (\"F\",\"Feminin\")),max_length=20)\n    date_naissance = models.DateField()\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    class Meta:\n        abstract = True\nclass Enseignant(Personne):\n    pass",
         "detail": "notes.models",
         "documentation": {}
     },
@@ -608,7 +777,7 @@
         "kind": 6,
         "importPath": "notes.models",
         "description": "notes.models",
-        "peekOfCode": "class Eleve(Personne):\n    id = models.BigIntegerField(primary_key=True)\n    niveau = models.ForeignKey(Niveau, on_delete=models.CASCADE)\n   # matieres = models.ManyToManyField(Matiere)\n    def __str__(self) -> str:\n        return self.nom + '\\n'\n    def clean(self) -> None:\n    nom_contient_entier = any(caractere.isdigit() for caractere in self.nom)\n    prenom_contient_entier = any(caractere.isdigit() for caractere in self.prenom)\n    if(nom_contient_entier or prenom_contient_entier):",
+        "peekOfCode": "class Eleve(Personne):\n    id = models.CharField(primary_key=True, max_length=55)\n    niveau = models.ForeignKey(Niveau, on_delete=models.CASCADE)\n   # matieres = models.ManyToManyField(Matiere)\n    def __str__(self) -> str:\n        return self.nom + '\\n'\n    def clean(self) -> None:\n        nom_contient_entier = any(caractere.isdigit() for caractere in self.nom)\n        prenom_contient_entier = any(caractere.isdigit() for caractere in self.prenom)\n        if(nom_contient_entier or prenom_contient_entier):",
         "detail": "notes.models",
         "documentation": {}
     },
@@ -626,8 +795,44 @@
         "kind": 5,
         "importPath": "notes.urls",
         "description": "notes.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"eleves/\", views.eleves, name=\"eleves\"),\n    path(\"eleve/<int:eleve_id>/\", views.eleve, name=\"eleve\"),\n    path(\"matieres/\", views.matieres, name=\"matieres\"),\n    path(\"matiere/<int:matiere_id>/\", views.matiere, name=\"matiere\"),\n    path(\"niveau/<int:niveau_id>/\", views.niveau, name=\"niveau\"),\n    path(\"add_note/<int:eleve_id>/<int:matiere_id>/\", views.add_note, name=\"add-note\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index, name=\"index\"),\n    path(\"eleves/\", views.eleves, name=\"eleves\"),\n    path(\"eleve/<str:eleve_id>/\", views.eleve, name=\"eleve\"),\n    path(\"matieres/\", views.matieres, name=\"matieres\"),\n    path(\"matiere/<int:matiere_id>/\", views.matiere, name=\"matiere\"),\n    path(\"niveau/<int:niveau_id>/\", views.niveau, name=\"niveau\"),\n    path(\"add_note/<str:eleve_id>/<int:matiere_id>/\", views.add_note, name=\"add-note\"),\n    path(\"eleves/pdf/\", views.listeEleves, name=\"eleves-pdf\"),\n    path(\"elevesNiv/pdf/<int:niveau_id>\", views.liste_niveauElv, name=\"eleves-niv-pdf\"),",
         "detail": "notes.urls",
+        "documentation": {}
+    },
+    {
+        "label": "noteEleves",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def noteEleves(request, matiere_id):\n    notes = Note.objects.filter(matiere_id = matiere_id)\n    liste = {\"notes\":notes, 'matiere': Matiere.objects.get(pk=matiere_id) }\n    print(liste)\n    generate_pdf(liste, \"note_eleves.tex\", \"note_eleves.pdf\")\n    with open( dirname(dirname(abspath(__file__)))+ \"/Templating_ifnti/out/note_eleves.pdf\", \"rb\") as my_file:\n        return HttpResponse(my_file.read(), content_type = \"application/pdf\")\ndef notesSynthese(request, eleve_id):\n    print(10)\n    notes = Note.objects.filter(eleve_id=eleve_id)",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "notesSynthese",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def notesSynthese(request, eleve_id):\n    print(10)\n    notes = Note.objects.filter(eleve_id=eleve_id)\n    notesPArMat = notes.values('matiere__nom')\n    notes = notesPArMat.annotate(moyenne_note=Avg('valeur', output_field=FloatField())).order_by('moyenne_note')\n    print(notes)\n    # print(0000)\n    liste = {\"notes\":notes, 'eleve': Eleve.objects.get(pk=eleve_id) }\n    generate_pdf(liste, \"note_synthese.tex\", \"note_synthese.pdf\")\n    with open( dirname(dirname(abspath(__file__)))+ \"/Templating_ifnti/out/note_synthese.pdf\", \"rb\") as my_file:",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "listeEleves",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def listeEleves(request):\n    eleves = Eleve.objects.all()\n    liste = {\"eleves\":eleves}\n    print(liste)\n    generate_pdf(liste, \"liste_eleves.tex\", \"liste_eleves.pdf\")\n    with open( dirname(dirname(abspath(__file__)))+ \"/Templating_ifnti/out/liste_eleves.pdf\", \"rb\") as my_file:\n        return HttpResponse(my_file.read(), content_type = \"application/pdf\")\ndef liste_niveauElv(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk= niveau_id)\n    print(niveau)",
+        "detail": "notes.views",
+        "documentation": {}
+    },
+    {
+        "label": "liste_niveauElv",
+        "kind": 2,
+        "importPath": "notes.views",
+        "description": "notes.views",
+        "peekOfCode": "def liste_niveauElv(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk= niveau_id)\n    print(niveau)\n    eleves = niveau.eleve_set.values()\n    liste = {\"eleves\":list(eleves.values())}\n    generate_pdf(liste, \"liste_eleves.tex\", \"liste_eleves.pdf\")\n    with open( dirname(dirname(abspath(__file__)))+ \"/Templating_ifnti/out/liste_eleves.pdf\", \"rb\") as my_file:\n        return HttpResponse(my_file.read(), content_type = \"application/pdf\")\ndef index(request):\n    return render(request, \"notes/accueuil.html\")",
+        "detail": "notes.views",
         "documentation": {}
     },
     {
@@ -635,7 +840,7 @@
         "kind": 2,
         "importPath": "notes.views",
         "description": "notes.views",
-        "peekOfCode": "def index(request):\n    return render(request, \"notes/index.html\")\ndef eleves(request):\n    eleves = Eleve.objects.all()\n    return render(request, \"eleves/index.html\", {\"eleves\": eleves})\ndef matieres(request):\n    matieres = Matiere.objects.all()\n    return render(request, \"matieres/index.html\", {\"matieres\": matieres})\ndef eleve(request, eleve_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)",
+        "peekOfCode": "def index(request):\n    return render(request, \"notes/accueuil.html\")\ndef eleves(request):\n    eleves = Eleve.objects.all()\n    return render(request, \"eleves/index.html\", {\"eleves\": eleves})\ndef matieres(request):\n    matieres = Matiere.objects.all()\n    return render(request, \"matieres/index.html\", {\"matieres\": matieres})\ndef eleve(request, eleve_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)",
         "detail": "notes.views",
         "documentation": {}
     },
@@ -671,7 +876,7 @@
         "kind": 2,
         "importPath": "notes.views",
         "description": "notes.views",
-        "peekOfCode": "def matiere(request, matiere_id):\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    return render(request, \"matieres/show.html\", locals())\ndef niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    form = NoteForm()",
+        "peekOfCode": "def matiere(request, matiere_id):\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    return render(request, \"matieres/show.html\", locals())\ndef niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\n@login_required\n@permission_required('notes.add_note', raise_exception=True)\ndef add_note(request, eleve_id, matiere_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)",
         "detail": "notes.views",
         "documentation": {}
     },
@@ -680,7 +885,7 @@
         "kind": 2,
         "importPath": "notes.views",
         "description": "notes.views",
-        "peekOfCode": "def niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\ndef add_note(request, eleve_id, matiere_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    form = NoteForm()\n    if request.method == \"POST\":\n        form = NoteForm(request.POST)\n        if form.is_valid():",
+        "peekOfCode": "def niveau(request, niveau_id):\n    niveau = get_object_or_404(Niveau, pk=niveau_id)\n    return render(request, \"niveaus/show.html\", locals())\n@login_required\n@permission_required('notes.add_note', raise_exception=True)\ndef add_note(request, eleve_id, matiere_id):\n    eleve = get_object_or_404(Eleve, pk=eleve_id)\n    matiere = get_object_or_404(Matiere, pk=matiere_id)\n    form = NoteForm()\n    if request.method == \"POST\":",
         "detail": "notes.views",
         "documentation": {}
     },
